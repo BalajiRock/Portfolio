@@ -1,0 +1,27 @@
+.AC-layout{
+    height: 140vh;
+    width: 100vw; 
+    background-image: url("./Home_background.jpg");
+    object-fit:cover;
+    background-size: 100vw 100vh; 
+    background-color: black;
+    background-repeat:no-repeat;
+    padding: 10vh 5vw;
+    /* padding: 5vw; */
+
+}
+.outerAC{
+    padding: 0vh 2vw;
+}
+.AC-layout h1{
+    padding:4vh 0 2vh 2vh ;
+}
+.ACcards{
+    padding: 1vh;
+    font-size: 1.5rem;
+    
+}
+.link{
+    color: rgb(154, 0, 197);
+    text-decoration:wavy ;
+}

@@ -1,0 +1,30 @@
+.AboutMe{
+    height: 100vh;
+    width: 100vw; 
+    background-image: url("./Home_background.jpg");
+    object-fit:cover;
+    background-size: 100vw 100vh; 
+    background-color: black;
+    background-repeat:no-repeat;
+    padding: 12vh 5vw;
+    font-size: 1.3rem;
+
+}
+.AboutMeDescription{
+    
+    padding: 2vh 2vw;
+}
+.hobbies{
+    padding: 2vh 2vw;
+}
+.Languages{
+    padding: 2vh 2vw;
+}
+.hobbies li{
+    padding: 0vh 1vw;
+    list-style: none;
+}
+.Languages li{
+    list-style: none;
+    padding: 0vh 1vw;
+}

@@ -1,0 +1,99 @@
+.heading{
+    font-size: 3rem;
+    padding: 15vh  0 2vw 10vw;
+}
+.layout{
+    background-size:contain;
+    background-image: url("./projects-background.jpg");
+}
+.projectTitle{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.7rem;
+    margin:2vh;
+}
+.tags{
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.tag{
+    margin: 0.5vw;
+    padding: 0.2vw;
+    border-radius: 8px;
+    color:rgb(255, 255, 255);
+    background-color: rgb(200, 1, 255);
+    padding: 0 0.5vw;
+}
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap:2vw;
+    box-sizing: border-box;
+    
+}
+.project{
+    overflow: hidden;
+    max-width: 400px;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: solid rgb(200, 1, 255) 0.1vw;
+    height: 62vh;
+    width: 100%;
+    border-radius: 1rem;
+    padding:2vw;
+}
+.project img{
+    display: none;
+    width: 100%; 
+    height: 64%; 
+    display: block; 
+    border-radius: 8px;
+}
+
+ .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  } 
+
+
+  .projectTitle {
+    font-size: 2em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.descriptionOfProject {
+    font-size: 1em;
+    padding: 0.5vw;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.linksToProject{
+    display: flex;
+    justify-content: space-around;
+}
+.linksToProject input[type="button"] {
+    background-color:  rgb(200, 1, 255);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.linksToProject input[type="button"]:hover {
+    background-color:  rgb(150, 0, 191);
+}

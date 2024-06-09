@@ -1,0 +1,74 @@
+.Skills-layout{
+    height: auto;
+    width: 100vw; 
+    padding: 15vh 10vw;
+    background-image: url("./skills-background.jpg");
+    object-fit:cover;
+    background-size: 100vw 100vh; 
+    background-color: black;
+    background-repeat:no-repeat;
+}
+
+.imageSkill {
+    width: 15vh; 
+    height: 15vh;
+    padding: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.2rem solid #c286ff; 
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.skills {
+    padding: 5vh 3vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:self-start;
+    justify-items:self-start;
+    justify-content:stretch;
+    gap: 2vw;
+}
+
+@media (max-width: 768px) {
+    .skills {
+        padding: 2vh 1vw;
+        gap: 1.5vw;
+    }
+    .imageSkill {
+        width: 15vh; 
+        height: 15vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills {
+        padding: 1vh 1vw;
+        gap: 2vw;
+    }
+    .imageSkill {
+        width: 10vh; 
+        height: 10vh;
+    }
+}
+
+
+.imageSkill img {
+    width: 80%;
+    height: 80%; 
+    transition: transform 0.3s ease-in-out;
+    object-fit: contain;
+    
+}
+.imageSkill img:hover {
+    transform: scale(1.2);
+    object-fit: contain;
+    
+}
+.skill-heading{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}

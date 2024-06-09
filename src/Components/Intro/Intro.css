@@ -1,0 +1,67 @@
+.intro-img{
+    height: 100vh ;
+    width: 100vw;
+    background-repeat: repeat-y;
+    background-size:cover;
+    background-image: url("./Home_background.jpg");
+    padding: 15vh 15vw;
+
+}
+.texts{
+    font-size: 10vh;
+    height: 32vh;
+    display: block;
+    overflow-y: auto; 
+}
+
+.coloredText{
+    font-weight: 550;
+    color: rgb(194, 25, 255);
+    text-shadow: 2px 2px white;
+}
+.resume-btn{
+    height: 3.5rem;
+    width: 10rem;
+    border-radius: 8px;
+    color:rgb(194, 25, 255);
+    border: 3.5px solid  rgb(194, 25, 255);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 5rem auto;
+}
+.resume-btn:hover{
+    background-color: rgb(194, 25, 255);
+    color: black;
+}
+.resume-btn:active{
+    background-color: black;
+    color: rgb(194, 25, 255);
+}
+.info-text{
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+
+@media (max-width: 768px) {
+    .texts{
+        font-size: 5vh;
+        height: 27vh;
+        display: block;
+        overflow-y: auto; 
+    }
+    .info-text{
+        font-size: 2vh;
+        opacity: 0.8;
+    }
+    .resume-btn{
+        height: 3.5rem;
+        width: 10rem;
+        border-radius: 8px;
+        color:rgb(194, 25, 255);
+        border: 3.5px solid  rgb(194, 25, 255);
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin: 2.2vh auto;
+    }
+  }

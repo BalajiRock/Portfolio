@@ -1,0 +1,5 @@
+squares = (val * val for val in range(100))
+print(max(squares))    
+for i in squares:
+    print(i)
+    
