@@ -69,14 +69,11 @@
   .projectTitle {
     font-size: 2em;
     color: #ffffff;
-    margin-bottom: 10px;
 }
 
 .descriptionOfProject {
     font-size: 1em;
-    padding: 0.5vw;
     color: #ffffff;
-    margin-bottom: 10px;
 }
 .linksToProject{
     display: flex;

@@ -14,7 +14,6 @@ const Intro = () => {
         "Balaji M.",
         "a Passionate Developer.",
         "a Problem Solver.",
-        "a bvc pipe",
         "",
       ]}
       typeSpeed={70}
