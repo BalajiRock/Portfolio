@@ -1,5 +1,5 @@
 .AboutMe{
-    height: 100vh;
+    height: auto;
     width: 100vw; 
     background-image: url("./Home_background.jpg");
     object-fit:cover;

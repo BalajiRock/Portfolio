@@ -6,7 +6,7 @@ import KeyboardPlayerImg from './KeyBoard.jpg';
 import TrafficOptimizationImg from './TrafficOptimization.jpeg';
 import MusicGeneratorImg from './MusicGenerator.png';
 import ChatImg from './ChatApplication.png';
-import PortfolioImg from './Portfolio.png';
+import fileSharingImg from './SecureFileSharing.jpg';
 import kafkaImg from './kafka.jpg';
 import DSDNImg from './DSDN.png';
 import SocialMediaImg from './socialmedia.jpg';
@@ -71,6 +71,14 @@ const projectData = [
     link: 'https://github.com/BalajiRock/YAKraft',
   },
   {
+    id: 'Secure file sharing',
+    title: 'Secure file sharing system',
+    description: 'My personal portfolio developed using Python, Pygame, and Threads.',
+    technologies: ['Python', 'Fast API', 'MySQL','Postman'],
+    img: fileSharingImg,
+    link: 'https://github.com/BalajiRock/YAKraft',
+  },
+  {
     id: 'BattleFantasy',
     title: 'Battle Fantasy',
     description: 'A fantasy battle game developed using Python and Pygame.',
@@ -95,14 +103,6 @@ const projectData = [
     link: 'https://github.com/BalajiRock/YAKraft',
   },
   {
-    id: 'Portfolio',
-    title: 'My Portfolio',
-    description: 'My personal portfolio developed using Python, Pygame, and Threads.',
-    technologies: ['Python', 'Pygame', 'Threads'],
-    img: PortfolioImg,
-    link: 'https://github.com/BalajiRock/YAKraft',
-  },
-  {
     id: 'KeyboardPlayer',
     title: 'Keyboard Player',
     description: 'A keyboard player developed using Python, Pygame, and Threads.',
@@ -112,11 +112,10 @@ const projectData = [
   },
 ];
 
-const Project = ({ project, isActive, onMouseEnter, onMouseLeave }) => (
+const Project = ({ project, isActive, onClick, onMouseLeave }) => (
   <div
     className="project"
-    onMouseEnter={() => onMouseEnter(project.id)}
-    onMouseLeave={onMouseLeave}
+    onClick={() => onClick(project.id)}
   >
     {isActive ? (
       <div>
@@ -150,11 +149,12 @@ const Projects = () => {
   const [projectDetails, setProjectDetails] = useState('');
 
   const handleMouseEnter = (val) => {
-    setProjectDetails(val);
+    if(projectDetails === val)
+    setProjectDetails("");
+  else
+  setProjectDetails(val);
   };
-  const handleMouseLeave = () => {
-    setProjectDetails('');
-  };
+
 
   return (
     <div className="projectsMain">
@@ -166,8 +166,7 @@ const Projects = () => {
               key={project.id}
               project={project}
               isActive={projectDetails === project.id}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
+              onClick={handleMouseEnter}
             />
           ))}
         </div>

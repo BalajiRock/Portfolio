@@ -1,5 +1,5 @@
 .AC-layout{
-    height: 140vh;
+    height: auto;
     width: 100vw; 
     background-image: url("./Home_background.jpg");
     object-fit:cover;
